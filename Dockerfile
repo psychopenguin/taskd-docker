@@ -7,4 +7,5 @@ ENV TASKDDATA /taskd
 RUN mkdir $TASKDDATA
 ADD start_taskd.sh /
 RUN chmod +x start_taskd.sh
-
+EXPOSE 53589
+CMD ./start_taskd.sh
